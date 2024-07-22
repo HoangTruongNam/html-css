@@ -27,8 +27,6 @@
         </button>
         <div class="collapse navbar-collapse" id="nav">
             <div>
-
-                <!-- việc cần làm :sửa lại hết style, cho vào 1 cái css -->
                 <ul class="navbar-nav">
                     <li class="nav-item" ><a class="nav-link active" href="">Home</a></li>
                     
@@ -56,10 +54,10 @@
 
         <div class="btn-group" role="group" style="margin-left: 1%;margin-right: 10%; scale:80% ;" >
             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-            <label class="btn btn-outline-danger" for="btnradio1"> VI</label>
+            <label class="btn btn-outline-danger" for="btnradio1"> ENG</label>
           
             <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-danger" for="btnradio2">ENG</label>          
+            <label class="btn btn-outline-danger" for="btnradio2">VI</label>          
         </div>  
     </nav>
 
@@ -184,7 +182,7 @@
         </div>
     </section>
 
-    <section class="margin-set">
+    <section class="margin-set" style="margin-top: 8%;">
         <h2 class="margin-set" style="margin-bottom: 4%;"><strong>Culture - Event</strong></h2>
         <div style="display: flex; justify-content: center;">
             <button class="bton margin-set;" id="reverse" style="width: 25%; margin: 4%;">
@@ -194,16 +192,120 @@
         
     </section>
 
-    <footer style="background-color: #f6f6f6; padding: 10%;">
-        <div id="logo-sun" style="margin-right: 10%; margin-left: 12%; display: flex; ">
-            <img style="max-width: 120px; height: auto;" src="https://sun-asterisk.vn/wp-content/uploads/2020/10/logo-sun@2x.png" alt="">
-            <div>
-                <ul>who are we
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+    <footer style="background-color: #f6f6f6; padding: 8%;">
+        <div class="grid" style="margin-right: 10%; margin-bottom: 5%; ">
+            <img class="grid-content" style="max-width: 150px; height: auto;" src="https://sun-asterisk.vn/wp-content/uploads/2020/10/logo-sun@2x.png" alt="">
+            
+            <div class="grid-content">
+                <div class="title">
+                    <div 
+                        class="footer-circle">
+                    </div>
+                    who are we ?</div>
+                <div class="grid-list">
+                    <div>
+                        Vision, mission
+                    </div>
+                    <div> 
+                        Core values
+                    </div>
+                    <div>
+                        The meaning of the name Sun*
+                    </div>
+                </div>
+                
             </div>
+
+            
+            <div class="grid-content">
+                <div class="title">
+                    <div 
+                        class="footer-circle">
+                    </div>
+                    What do we do?</div>
+                <div class="grid-list">
+                    <div class="g-item">
+                        What do we do?
+                    </div>
+                    <div class="g-item"> 
+                        Talent Platform
+                    </div>
+                    <div class="g-item">
+                        Our projects
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="grid-content">
+                <div class="title">
+                    <div 
+                        class="footer-circle">
+                    </div>
+                    Updated News
+                </div>
+                <div class="grid-list">
+                    <div class="g-item">
+                        Culture - Events
+                    </div>
+                    <div class="g-item"> 
+                        Recruitment
+                    </div>
+                    <div class="g-item">
+                        Benefits and perks
+                    </div>
+                </div>
+                
+            </div>
+
+            <ul class="grid-content">
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+
+            
+            <div class="grid-content">
+                <div class="title">
+                    <div 
+                        class="footer-circle">
+                    </div>
+                    Contact
+                </div>
+                <div class="grid-list">
+                    <div class="g-item">
+                        Phone: 84-24-3795-5417
+                    </div>
+                    <div class="g-item"> 
+                        Email: hr@sun-asterisk.com
+                    </div>
+                    <div class="g-item">
+                        The meaning of the name Sun*
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="grid-content" id="item-office">
+                <div class="title">Office</div>
+                <div class="grid-list">
+                    <div class="g-item">
+                        T13, Keangnam Hanoi Landmark Tower, Pham Hung, Nam Tu Liem, Hanoi
+                    </div>
+                    <div class="g-item"> 
+                        4F, FHome Building, 16 Ly Thuong Kiet Str., Hai Chau district, Da Nang
+                    </div>
+                    <div class="g-item">
+                        9th Floor, L'Mak Long Tower, 101-103 Nguyen Cuu Van, Ward 17, Binh Thanh District, Ho Chi Minh City
+
+                    </div >
+                    <div class="g-item">
+                        Tokyo Office - Cebu Office - Phnom Penh Office
+                    </div>
+                </div>
+                
+            </div>
+            
         </div>
         <div>
 
@@ -214,6 +316,47 @@
 </body>
 
 <style>
+    #item-office{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .g-item{
+        margin-bottom: 10px;
+    }
+
+    .grid-list{
+        margin-top: 1rem;
+        font-weight: 200;
+        color: #7a7a7a;
+        font-size: 14px;
+        z-index: 2;
+    }
+    .title{
+        color: #54595f;
+        font-size: large;
+        font-weight: 500;
+        z-index: 2;
+        
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        grid-auto-rows: 50px;
+        grid-auto-columns: 50px;
+        row-gap: 10rem;
+        column-gap: 5rem;
+        z-index: 2;
+
+    }
+    .grid-content{
+        list-style-type: none;
+        padding-left: 0;
+        /* background-color: #C31012; */
+        z-index: 2;
+        
+        
+    }
     
     .workenv-content{
         display: flex;
@@ -376,6 +519,16 @@
             background-color:#C31012; 
             border-radius: 50%; 
         }
+    .footer-circle{
+
+        position:absolute;
+        width: 38px;
+        height: 38px;
+        background-color:#e4e4e4; 
+        transform: translate(-20%, -20%);
+        border-radius: 50%; 
+        z-index: -1;
+    }
 
     #c1{
             height: 200px;
