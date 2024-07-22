@@ -212,6 +212,28 @@
         z-index: -1;
     }
 
+    .containerrr {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media (min-width: 768px) {
+        .containerrr {
+          width: 750px;
+        }
+      }
+      @media (min-width: 992px) {
+        .containerrr {
+          width: 970px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .containerrr {
+          width: 1170px;
+        }
+      }
+
     #c1{
             height: 200px;
             width: 200px;
