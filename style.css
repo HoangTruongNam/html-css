@@ -254,7 +254,8 @@ box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
         color: #C31012;
         font-weight: 700;
         line-height: 1.2;
-        margin-top: 30%;        
+        margin-top: 28%;   
+        padding-left: 30%;     
     }
 .counter-content{
         font-weight: normal;
@@ -345,13 +346,13 @@ border-radius: 25px;
     
 }
 
-.grid{
+.grid {
+    column-gap: 5rem;
     display: grid;
     grid-template-columns: repeat(4,auto);
     grid-auto-rows: 50px;
     grid-auto-columns: 50px;
     row-gap: 10rem;
-    column-gap: 5rem;
     z-index: 2;
 
 }
@@ -538,9 +539,6 @@ h2{
         margin-top: 5%;
     }
 
-    .margin-set{
-        margin-inline :3%;
-    }
     .slide-text {
         position: absolute;
         flex: 1;
@@ -548,6 +546,10 @@ h2{
         padding-right: 39px;
         padding-top: 250px;
         padding-bottom: 20px;
+    }
+    .join-bton{
+        height: 70px;
+        width: 70px;
     }
     
     
@@ -614,7 +616,11 @@ h2{
     .slider-controls button {
         display: none;
     }
+
+    .join-bton{
+        height: 60px;
+        width: 60px;
+        font-size: small;
+    }
     
 }
-
-
