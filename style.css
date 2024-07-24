@@ -1,150 +1,229 @@
-#item-office{
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-    .g-item{
-        margin-bottom: 10px;
-    }
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 65px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.logo{
+    position: relative;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25%;
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    margin: 15px;
+}
 
-    .grid-list{
-        margin-top: 1rem;
-        font-weight: 200;
-        color: #7a7a7a;
-        font-size: 14px;
-        z-index: 2;
-    }
-    .title{
-        color: #54595f;
-        font-size: large;
-        font-weight: 500;
-        z-index: 2;
-        
-    }
 
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(4,auto);
-        grid-auto-rows: 50px;
-        grid-auto-columns: 50px;
-        row-gap: 10rem;
-        column-gap: 5rem;
-        z-index: 2;
+/*mobile nav*/
+.nav-btn{
 
-    }
-    .grid-content{
-        list-style-type: none;
-        padding-left: 0;
-        /* background-color: #C31012; */
-        z-index: 2;
-        
-        
-    }
+    width: 28px;
+    height: 28px;
+    color: white;
+    display: none;
+}
+.nav-mobile{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 0;
+    display: none;
+    color: white;
     
-    .workenv-content{
-        display: flex;
-        margin-bottom: 6%;
-        font-weight: 200;
-    }
-    #nav{
-         z-index: 1000;
-    }
-    .navbar-nav{
-        margin-left: 180px;
-        
-    }
-    .nav-item
-    {
-        margin-top: 2%;
-        font-weight: 300;
-        margin-left: 20px;
-        font-size: 13px;
-        
-    }
-    .nav-item:hover{
-        color: #C31012;
-    }
-    .images{
-        background-image: url(https://sun-asterisk.vn/wp-content/uploads/2020/11/career-bg.jpg);
-        border-radius: 25px;
-        margin: 10%;
-        
-    }
-    .overlay  {
+}
+.nav-mobile-list{
+    position: relative;
+    padding: 8px;
+    width: 100%;
+    text-decoration: none;
     
-    background-color: rgba(195, 16, 18, 0.9);
-    border-radius: 25px;
-    }
+}
+.nav-mobile-list :hover
+{
+    width: 100%;
+    background-color: #C31012;
+    color: white;
+}
+.nav-link-mobile{
+    color: black;
+}
+.nav-link{
+    color: black;
+    font-weight: 200;
+}
+
+.bton{
+    position: absolute;
+    
+    display: flex;
+   
+    right: 5%;
+}
+.lang-btn {
+appearance: none;
+background-color: transparent;
+border: 1px solid #C31012;
+border-radius: 6px;
+color: #C31012;
+cursor: pointer;
+font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 10px;
+
+margin: 0;
+min-width: 0;
+outline: none;
+padding-top: 4px;
+padding-right: 24px;
+padding-bottom: 4px;
+scale: 1.1;
+
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+touch-action: manipulation;
+width: 30%;
+
+will-change: transform;
+}
+
+.lang-btn-no-border{
+    border: 0px solid #1A1A1A;
+    color: gray;
+}
+.lang-btn-text{
+    text-decoration: none;
+    font-size: 10px;
+    color: gray;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+}
+
+.lang-btn:disabled {
+pointer-events: none;
+}
+
+.lang-btn:hover {
+color:#C31012;
+background-color:transparent;
+
+}
+
+.lang-btn:active {
+box-shadow: none;
+transform: translateY(0);
+}
+.join-bton {
+    position: fixed; 
+    bottom: 15%; 
+    right: 25px; 
+    z-index: 99; 
+    background-color:#C31012; 
+    color: white; 
+    border: 8px solid #f9f9f9;
+    cursor: pointer; 
+    /* padding-top: 22px; */
+    border-radius: 50%; 
+    font-size: 15px; 
+    font-weight: 500;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.margin-set{
+    margin-inline :6%;
+}
+
+.box{
+    border-radius: 15px;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4%;
+    box-shadow: 0 0 0 1px #D8DADC;
+   
+}
+.smbox
+{
+    
+    max-width: 45%;
+    height: auto;
+}
+
+.intro-box{
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px #D8DADC;
+}
+.subcript{
+    font-size: smaller;
+}
 
 
+.boxbton{ 
+    /* btn bị conflict */
+appearance: none;
+background-color: white;
+border: 0px solid #1A1A1A;
+border-radius: 5px;
+box-sizing: border-box;
+color: #3B3B3B;
+cursor: pointer;
+display: inline-block;
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+min-height: 60px;
+min-width: 0;
+padding: 16px 24px;
+text-align: center;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
 
-    .box{
-        border-radius: 15px;
-        justify-content: center;
-        box-sizing: border-box;
-        padding: 4%;
-        box-shadow: 0 0 0 1px #D8DADC;
-       
-    }
-    .smbox
-    {
-        
-        max-width: 45%;
-        height: auto;
-    }
-    .intro-box{
-        border-radius: 15px;
-        box-shadow: 0 0 0 1px #D8DADC;
-    }
-    .margin-set{
-        margin-inline :6%;
-    }
-    .bton{ 
-            /* btn bị conflict */
-        appearance: none;
-        background-color: white;
-        border: 0px solid #1A1A1A;
-        border-radius: 5px;
-        box-sizing: border-box;
-        color: #3B3B3B;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: normal;
-        min-height: 60px;
-        min-width: 0;
-        padding: 16px 24px;
-        text-align: center;
-        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-
-        width: 100%;
-        will-change: transform;
-        }
+width: 100%;
+will-change: transform;
+}
 
 
-    .bton:hover {
-        color: #fff;
-        background-color: #1A1A1A;
-        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-        }
+.boxbton:hover {
+color: #fff;
+background-color: #1A1A1A;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
 
-    .btn:active {
-        box-shadow: none;
-        transform: translateY(0);
-    }
-    .subcript{
-        font-size: smaller;
-    }
-    #reverse{
-        background-color: #1A1A1A;
-        color: white;
-    }
-    #reverse:hover
-    {
-        color: #fff;
-        background-color: rgb(195, 16, 18);
-    }
-    .counter
+#reverse{
+    background-color: #1A1A1A;
+    color: white;
+}
+#reverse:hover
+{
+    color: #fff;
+    background-color: rgb(195, 16, 18);
+}
+
+
+.counter
     {
         font-size:100px;
         color: #C31012;
@@ -153,95 +232,240 @@
         margin-top: 4%;
         
     }
-    .counter-content{
+.counter-content{
         font-weight: normal;
         font-size: 50px;
         color: #D8DADC;
     }
     
-    .subsup-container {
+.subsup-container {
             position: relative;
             display: inline-block;
         }
-    .subscript {
+.subscript {
             position:absolute;
             bottom: -0.00em;
             top: 3em;
             font-size: 0.5em;
-        }
-    .superscript {
-        position: relative;
-        top: 0.6em;
-            /* top: -0.00em;
-            bottom: -9.1em;
-            font-size: 0.5em; */
-        }
-
-    .join-bton {
-            position: fixed; 
-            bottom: 15%; 
-            right: 25px; 
-            z-index: 99; 
-            background-color:#C31012; 
-            color: white; 
-            border: 8px solid #f9f9f9;
-            cursor: pointer; 
-            padding-top: 22px;
-            border-radius: 50%; 
-            font-size: 15px; 
-            font-weight: 500;
-            height: 80px;
-            width: 80px;
-            display: flex;
-            justify-content: center;
-            
-        }
-    .circle
-        {
-            background-color:#C31012; 
-            border-radius: 50%; 
-        }
-    .footer-circle{
-
-        position:absolute;
-        width: 38px;
-        height: 38px;
-        background-color:#e4e4e4; 
-        transform: translate(-20%, -20%);
-        border-radius: 50%; 
-        z-index: -1;
     }
+.superscript {
+    position: relative;
+    top: 0.6em;
+}
 
-    .containerrr {
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      @media (min-width: 768px) {
-        .containerrr {
-          width: 750px;
-        }
-      }
-      @media (min-width: 992px) {
-        .containerrr {
-          width: 970px;
-        }
-      }
-      @media (min-width: 1200px) {
-        .containerrr {
-          width: 1170px;
-        }
-      }
+.circle{
+    background-color:#C31012; 
+    border-radius: 50%; 
+}
 
+.images{
+    background-image: url(https://sun-asterisk.vn/wp-content/uploads/2020/11/career-bg.jpg);
+    border-radius: 25px;
+    margin: 10%;
+    
+}
+
+.overlay  {
+    
+background-color: rgba(195, 16, 18, 0.9);
+border-radius: 25px;
+}
+
+#c1{
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    justify-content: center;
+    justify-self: center;
+    color: white;
+    margin-left: 36%;
+}
+#c1-content{
+    padding-top: 30%;
+}
+
+.workenv-content{
+    display: flex;
+    margin-bottom: 6%;
+    font-weight: 200;
+}
+
+#item-office{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.g-item{
+    margin-bottom: 10px;
+}
+
+.grid-list{
+    margin-top: 1rem;
+    font-weight: 200;
+    color: #7a7a7a;
+    font-size: 14px;
+    z-index: 2;
+}
+.title{
+    color: #54595f;
+    font-size: large;
+    font-weight: 500;
+    z-index: 2;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-auto-rows: 50px;
+    grid-auto-columns: 50px;
+    row-gap: 10rem;
+    column-gap: 5rem;
+    z-index: 2;
+
+}
+.grid-content{
+    list-style-type: none;
+    padding-left: 0;
+    /* background-color: #C31012; */
+    z-index: 2;
+    
+    
+}
+.see-all-btn{
+    max-width: 30%;
+    margin-left: 6%;
+}
+
+.ctr-env{
+    width: 500px;
+    height: auto; 
+    margin: 4%;
+}
+
+.sun-btn{
+   
+    max-width: 40% ;
+    margin-left: 30%; 
+    margin-top: 5%
+}
+
+.logo-sun{
+   
+    margin-left: 12%;
+}
+
+.wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-left: 50%;
+    border-radius: 10px;
+
+}
+.slider{
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+    border-radius: 10px;
+}
+.slider .slide-track{
+    -webkit-animation:scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(250px*3);
+}
+.slider .slide{
+    height: 496px;
+    width: 322px;
+}
+.slider .slide img{
+    width: auto;
+    height: 400px;
+    border-radius: 10px;
+    
+}
+@-webkit-keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*3))
+    }
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*3))
+    }
+}
+
+
+
+
+@media (max-width:1280px)
+{
+    .nav-btn{
+        display: block;
+    }
+    .nav-item-pc{
+        display: none;
+    }
+    .nav-input:checked ~ .nav-mobile{
+    display: block;
+    }
+    .sun-btn{
+        max-width: 70%;
+        margin-left: 15%; 
+        margin-top: 5%
+    }
+    
+    
+}
+
+@media (max-width:768px)
+{
+    
+    .mobile-section{
+        flex-direction: column;
+    }
+    .mobile-section-footer{
+        display: block;
+    }
+    .grid-content{
+        margin-top: 4%;
+    }
+    .business-img{
+        margin-left: 30%;
+    }
+    .smbox{
+        max-width: 100%;
+    }
+    .see-all-btn{
+        max-width: 100%;
+    }
     #c1{
-            height: 200px;
-            width: 200px;
-            padding: 5px;
-            padding-top: 65px;
-            justify-content: center;
-            color: white;
-            margin-left: 40%;
-            
+        margin-left: 25%;
+        
+    }
+    .ctr-env{
+        max-width: 100%;
+    }
+    
+    .sun-btn{
+        max-width: 80%;
+        margin-left: 12%; 
+        margin-top: 5%
+    }
+    .logo-sun{
+        margin-left: 1%;
+    }
+    
+}
 
-        }
+
